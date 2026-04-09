@@ -1,8 +1,8 @@
 class Pulse < Formula
   desc "macOS health monitor - CLI + menu bar app, pure Swift, zero dependencies"
   homepage "https://github.com/IvoryHeart/pulse"
-  url "https://github.com/IvoryHeart/pulse/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "869abbb71d542e367e810fdec79e8eb1c47df3dbbef2c1db956bb052a7574fe0"
+  url "https://github.com/IvoryHeart/pulse/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "839d1f16106319b70ed034dc399012986ea57ca7a296c7fe54284cf8bcd66cca"
   license "MIT"
   head "https://github.com/IvoryHeart/pulse.git", branch: "main"
 
