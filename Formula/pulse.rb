@@ -7,11 +7,14 @@ class Pulse < Formula
   head "https://github.com/IvoryHeart/pulse.git", branch: "main"
 
   depends_on :macos => :sonoma
-  depends_on xcode: ["15.0", :build]
 
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"
     bin.install ".build/release/pulse"
+    man1.install "docs/pulse.1"
+    bash_completion.install "completions/pulse.bash" => "pulse"
+    zsh_completion.install "completions/pulse.zsh" => "_pulse"
+    fish_completion.install "completions/pulse.fish"
   end
 
   test do
